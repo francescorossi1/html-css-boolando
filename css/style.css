@@ -23,10 +23,6 @@ a{
     margin: 0 auto;
 }
 
-.gray-text{
-    color: #E7E7E7;
-}
-
 .white-text{
     color: #fff;
 }
@@ -37,6 +33,7 @@ a{
 
 .navbar{
     position: fixed;
+    z-index: 1;
     background-color: #FF6900;
     top: 0;
     left: 0;
@@ -60,4 +57,40 @@ a{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+}
+
+/* Articles */
+
+.row{
+    display: flex;
+    padding: 60px 0;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.column{
+    position: relative;
+    width: calc(100% / 3 - 30px);
+}
+
+.column img{
+    width: 370px;
+}
+
+h4{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.red-txt{
+    color: #ff0000;
+    font-weight: 700;
+}
+
+.del-txt{
+    text-decoration: line-through;
+}
+
+.red-txt::after, .del-txt::after{
+    content: '\20AC';
 }
