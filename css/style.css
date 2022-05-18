@@ -25,6 +25,7 @@ a{
 
 .white-text{
     color: #fff;
+    font-weight: 400;
 }
 
 /* navbar */
@@ -93,4 +94,36 @@ h4{
 
 .red-txt::after, .del-txt::after{
     content: '\20AC';
+}
+
+/* tags */
+
+.tag{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+}
+
+.red-tag{
+    background-color: #ff0000;
+    padding: 4px 6px;   
+}
+
+.green-tag{
+    background-color: #008000;
+    padding: 4px 6px;
+    left: 52px;
+}
+
+.fav-box{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.column:last-child .tag{
+    left: 0;
 }
