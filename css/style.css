@@ -98,18 +98,18 @@ h4{
 
 /* tags */
 
-.tag{
+.shop-tag{
     position: absolute;
     bottom: 60px;
     left: 0;
 }
 
-.red-tag{
+.red-bg{
     background-color: #ff0000;
     padding: 4px 6px;   
 }
 
-.green-tag{
+.green-bg{
     background-color: #008000;
     padding: 4px 6px;
     left: 52px;
@@ -124,6 +124,34 @@ h4{
     background-color: #fff;
 }
 
-.column:last-child .tag{
+.fav-box::after{
+    display: flex;
+    content: '\2665';
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 28px;
+}
+
+.fav-box:hover.fav-box::after{
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.column:last-child .shop-tag{
     left: 0;
+}
+
+.alt-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.column:hover .alt-img{
+    display: block;
 }
