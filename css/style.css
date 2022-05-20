@@ -80,7 +80,6 @@ a{
 
 h4{
     margin: 0;
-    text-transform: uppercase;
 }
 
 .red-txt{
@@ -154,4 +153,31 @@ h4{
 
 .column:hover .alt-img{
     display: block;
+}
+
+/* Footer */
+
+.footer-bg{
+    background-color: #1A1A1A;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    line-height: 20px;
+}
+
+.links-div a{
+    padding-right: 10px;
+}
+
+.footer-socials span, .small-icons{
+    color: #fff;
+}
+
+.small-icons{
+    font-size: 18px;
+    padding: 5px;
 }
